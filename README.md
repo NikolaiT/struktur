@@ -2,6 +2,19 @@
 
 An abstract algorithm that recognizes a recurring structure in rendered HTML pages.
 
+**Struktur** is the end of web scraping as we know it. I used to spend hours upon hours
+searching smart CSS selectors and XPath queries in order to target the information I 
+wanted to scrape from web pages.
+
+With **Struktur**, you never even have to open your Web Dev Console. You simply run 
+**Struktur** on a page that you want to extract data from and **Struktur** automatically
+suggest possible structured information. You select the structure you are interested in 
+give the data variable names. 
+
+You only need to create the logic that enters your search terms into input fields. The 
+parsing scraping of data is handled completely by **Struktur**.
+
+
 ## Motivation
 
 The main motivation is that defining CSS / Xpath selectors for web scraping projects is a 
