@@ -29,8 +29,8 @@ html pages.
 
 Relevant structure is a collection (list) of objects which are of interest. 
 
-Example 1: The Google SERP page has 10 items that consist of a title, link and snippet.
-Example 2: The amazon product search results page list has many products that are rendered in a grid system.
++ Example 1: The Google SERP page has 10 items that consist of a title, link and snippet.
++ Example 2: The amazon product search results page list has many products that are rendered in a grid system.
 
 All those items have a common structure when interpretted visually: They have more or less 
 the same vertical alignment, the same font size, the same html tags and so on.
