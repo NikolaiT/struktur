@@ -26,7 +26,7 @@
         struktur() {
             let structures = this.findCandidates();
             console.log(structures);
-            let data = {};
+            let data = [];
 
             for (let s = 0; s < structures.length; s++) {
                 let structure = structures[s];
@@ -34,7 +34,7 @@
                 data[structure_name] = [];
                 for (let node of structure) {
                     let parsed = this.parseContent(node);
-                    data[structure_name] = parsed;
+                    data[structure_name].push(parsed);
                 }
             }
 
