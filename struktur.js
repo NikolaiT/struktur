@@ -14,7 +14,7 @@
                 minHeight: 200,
                 minWidthMin: 10,
                 minHeightMin: 10,
-                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p']
+                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p', 'li']
             };
 
             Object.assign(this.config, config);
