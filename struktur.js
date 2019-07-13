@@ -7,6 +7,11 @@ function struktur(config = {}) {
         }, this);
     };
 
+
+    /**
+     * The Struktur class. The whole logic that detects structure
+     * in rendered HTML pages happens here.
+     */
     class Struktur {
 
         constructor(config) {
@@ -20,6 +25,7 @@ function struktur(config = {}) {
                 highlightStruktur: false,
                 highlightContent: false,
                 no_data_img_src: true,
+                addClass: false,
             };
 
             Object.assign(this.config, config);
@@ -82,13 +88,26 @@ function struktur(config = {}) {
          */
         findCandidates() {
 
-            var allElems = document.body.getElementsByTagName('*');
+            var allElems = [];
+
+            function acceptNodes(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+
+            var treeWalker = document.createTreeWalker(
+                document.body,
+                NodeFilter.SHOW_ELEMENT,
+                { acceptNode: acceptNodes },
+                false
+            );
+
+            while(treeWalker.nextNode()) allElems.push(treeWalker.currentNode);
 
             var candidates = [];
             var found = [];
 
             for (let element of allElems) {
-                if (element.childElementCount > this.config.N) {
+                if (element.childElementCount >= this.config.N) {
                     let child_tags = {};
                     for (var i = 0; i < element.childElementCount; i++) {
                         let tag = element.children[i].tagName.toLowerCase();
@@ -197,11 +216,16 @@ function struktur(config = {}) {
                 let link = currentNode.getAttribute('href');
                 if (currentNode.innerText && currentNode.innerText.length > 0) {
                     this.usedTextNodes.extend(this.textNodesUnder(currentNode));
-                    this.parsed.push({
+                    let obj = {
                         'node': currentNode,
                         'href': link,
                         'linkText': currentNode.innerText.trim()
-                    });
+                    };
+                    if (this.config.addClass) {
+                        obj.class = currentNode.classList.toString();
+                    }
+                    this.parsed.push(obj);
+
                 }
             }
 
@@ -211,31 +235,40 @@ function struktur(config = {}) {
                 if (this.config.no_data_img_src && src.startsWith('data:')) {
                     src = '';
                 }
+                var obj = {};
                 if (currentNode.hasAttribute('alt')) {
-                    this.parsed.push({
+                    obj = {
                         'node': currentNode,
                         'type': 'img',
                         'src': src,
                         'imgAlt': currentNode.getAttribute('alt').trim(),
-                    })
+                    }
                 } else {
-                    this.parsed.push({
+                    obj = {
                         'node': currentNode,
                         'type': 'img',
                         'src': src
-                    })
+                    }
                 }
+                if (this.config.addClass) {
+                    obj.class = currentNode.classList.toString();
+                }
+                this.parsed.push(obj);
             }
 
             if (currentNode.nodeType === 3 && !this.usedTextNodes.includes(currentNode)) {
                 let parent = currentNode.parentElement;
                 if (this.isVisible(parent)) {
                     let text = currentNode.data.trim();
-                    if (text.length > 1) {
-                        this.parsed.push({
+                    if (text.length >= 1) {
+                        obj = {
                             'node': currentNode,
                             'text': currentNode.data.trim()
-                        });
+                        };
+                        if (this.config.addClass) {
+                            obj.class = currentNode.parentElement.classList.toString();
+                        }
+                        this.parsed.push(obj);
                     }
                 }
             }
