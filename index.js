@@ -16,6 +16,8 @@ const config = {
         'reddit': 'https://www.reddit.com/',
         'huffpost': 'https://www.huffpost.com',
         'amazon': 'https://www.amazon.com/s?k=illuminati',
+        'wp': 'https://www.washingtonpost.com/',
+        'zeit': 'https://www.zeit.de/index',
     },
     chrome_flags: [
         '--disable-infobars',
@@ -34,22 +36,22 @@ puppeteer.launch({ headless: false, args: config.chrome_flags }).then(async brow
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1040 });
-  await page.goto(config.urls.amazon, {waitUntil: 'networkidle2'});
+  await page.goto(config.urls.zeit, {waitUntil: 'networkidle2'});
 
-  await page.waitFor(2500);
+  await page.waitFor(4000);
 
   await page.addScriptTag({path: 'struktur.js'});
 
   var results = await page.evaluate(() => {
      return struktur({
-         N: 10,
-         highlightStruktur: false,
-         highlightContent: false,
+         N: 4,
+         highlightStruktur: true,
+         highlightContent: true,
          addClass: false,
      });
   });
 
-  await page.waitFor(2500);
+  await page.waitFor(4000);
 
   console.log(results);
 

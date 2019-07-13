@@ -1,13 +1,15 @@
 # Struktur
 
-A algorithm that recognizes a recurring structure in rendered HTML pages without any manual rules. Outputs JSON.
+A javascript module that recognizes a recurring structure in rendered HTML pages without any manual rules. Outputs JSON.
 
-**Struktur** puts an end to web scraping / information extraction with painful CSS selectors / XPath queries.
+**Struktur** puts an end to web scraping / information extraction with painful CSS selectors / XPath queries. Struktur finds collections of items with similar structure. In the overwhelming majority of cases, this is the data you need.
 
-With **Struktur**, you never even have to open your Web Dev Console. You simply run 
-**Struktur** on a page that you want to extract data from and **Struktur** automatically suggest possible structured information.
+### Examples
 
-Struktur finds collections of items with similar structure. In the overwhelming majority of cases, this is the data you need to extract.
+1. Structures in Google SERP. Extracted data as JSON. 
+2. Structures in Bing SERP. Data as JSON.
+3. Product Structures of Amazon. Data as JSON.
+4. Articles in 
 
 ## Motivation
 

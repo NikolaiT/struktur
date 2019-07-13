@@ -288,13 +288,23 @@ function struktur(config = {}) {
         parseContent(container) {
             this.parsed = [];
             this.usedTextNodes = [];
-            let allNodes = [];
 
-            this.walkTheDOM(container, allNodes);
-
-            for (let node of allNodes) {
-                this.extractReadable(node);
+            function acceptNodes(node) {
+                if (node.nodeType === 1 || node.nodeType === 3) {
+                    return NodeFilter.FILTER_ACCEPT;
+                } else {
+                    return NodeFilter.FILTER_REJECT;
+                }
             }
+
+            var treeWalker = document.createTreeWalker(
+                container,
+                NodeFilter.SHOW_ALL,
+                { acceptNode: acceptNodes },
+                false
+            );
+
+            while(treeWalker.nextNode()) this.extractReadable(treeWalker.currentNode);
 
             return this.parsed;
         }
