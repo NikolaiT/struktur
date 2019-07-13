@@ -1,8 +1,10 @@
-(() => {
+function struktur(config = {}) {
 
     Array.prototype.extend = function (other_array) {
         /* You should include a test to check whether other_array really is an array */
-        other_array.forEach(function(v) {this.push(v)}, this);
+        other_array.forEach(function (v) {
+            this.push(v)
+        }, this);
     };
 
     class Struktur {
@@ -14,7 +16,10 @@
                 minHeight: 200,
                 minWidthMin: 10,
                 minHeightMin: 10,
-                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p', 'li']
+                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p', 'li', 'dd'],
+                highlightStruktur: false,
+                highlightContent: false,
+                no_data_img_src: true,
             };
 
             Object.assign(this.config, config);
@@ -25,20 +30,40 @@
          */
         struktur() {
             let structures = this.findCandidates();
-            console.log(structures);
-            let data = [];
+            var data = {};
 
-            for (let s = 0; s < structures.length; s++) {
-                let structure = structures[s];
-                let structure_name = 'structure-' + s;
-                data[structure_name] = [];
-                for (let node of structure) {
-                    let parsed = this.parseContent(node);
-                    data[structure_name].push(parsed);
+            if (this.config.highlightStruktur) {
+                for (let structure of structures) {
+                    structure.forEach((node) => {
+                       node.style.border = "5px solid rgb(0, 119, 188)";
+                    });
                 }
             }
 
-            console.dir(data);
+            var structure_name;
+
+            for (let s = 0; s < structures.length; s++) {
+                let structure = structures[s];
+                structure_name = 'structure_' + s;
+                data[structure_name] = [];
+                for (let node of structure) {
+                    let parsed = this.parseContent(node);
+
+                    if (this.config.highlightContent) {
+                        parsed.forEach((obj) => {
+                            let node = (obj.node.nodeType === 1) ? obj.node : obj.node.parentNode;
+                            node.style.border = "1px solid rgb(255, 0, 0)";
+                        });
+                    }
+
+                    // dont return the node
+                    data[structure_name].push(parsed.map((el) => {
+                        delete el.node; return el;
+                    }));
+                }
+            }
+
+            return data;
         }
 
         /**
@@ -137,8 +162,8 @@
          * @returns {Array}
          */
         textNodesUnder(el) {
-            var n, a=[], walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT,null,false);
-            while(n = walk.nextNode()) {
+            var n, a = [], walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+            while (n = walk.nextNode()) {
                 a.push(n);
             }
             return a;
@@ -173,6 +198,7 @@
                 if (currentNode.innerText && currentNode.innerText.length > 0) {
                     this.usedTextNodes.extend(this.textNodesUnder(currentNode));
                     this.parsed.push({
+                        'node': currentNode,
                         'href': link,
                         'linkText': currentNode.innerText.trim()
                     });
@@ -181,14 +207,20 @@
 
             if (currentNode.tagName === 'IMG' && currentNode.hasAttribute('src')) {
                 let src = currentNode.getAttribute('src');
+                // not interested in data img
+                if (this.config.no_data_img_src && src.startsWith('data:')) {
+                    src = '';
+                }
                 if (currentNode.hasAttribute('alt')) {
                     this.parsed.push({
+                        'node': currentNode,
                         'type': 'img',
                         'src': src,
                         'imgAlt': currentNode.getAttribute('alt').trim(),
                     })
                 } else {
                     this.parsed.push({
+                        'node': currentNode,
                         'type': 'img',
                         'src': src
                     })
@@ -201,6 +233,7 @@
                     let text = currentNode.data.trim();
                     if (text.length > 1) {
                         this.parsed.push({
+                            'node': currentNode,
                             'text': currentNode.data.trim()
                         });
                     }
@@ -235,6 +268,6 @@
 
     }
 
-    (new Struktur()).struktur();
-
-})();
+    let struktur = new Struktur(config);
+    return JSON.stringify(struktur.struktur(), null, 2);
+}

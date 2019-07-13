@@ -1,8 +1,8 @@
 # Struktur
 
-An abstract algorithm that recognizes a recurring structure in rendered HTML pages without any manual rules. Outputs JSON.
+A algorithm that recognizes a recurring structure in rendered HTML pages without any manual rules. Outputs JSON.
 
-**Struktur** is the end of web scraping / information extraction as we know it.
+**Struktur** puts an end to web scraping / information extraction with painful CSS selectors / XPath queries.
 
 With **Struktur**, you never even have to open your Web Dev Console. You simply run 
 **Struktur** on a page that you want to extract data from and **Struktur** automatically suggest possible structured information.
@@ -13,7 +13,7 @@ Struktur finds collections of items with similar structure. In the overwhelming 
 
 There are two reasons why web scraping is painful
 
-#### 1. CSS Selectors and Xpath queries suck big time
+#### 1. CSS Selectors and XPath queries suck big time
  
 Finding good CSS selectors and XPath queries to target information on web sites is a strenuous task. Often the same data is rendered in slightly different markup under different conditions. This means that we often need different versions of CSS selectors / Xpath for the same targeted information. The markup of websites changes frequently and the maintaining of those selectors is soul crushing.
 
@@ -79,7 +79,9 @@ a significant part of `document.body.getBoundingClientRect()`, add those element
 In the next stage we compare the items within the potential structures. If they share *common characteristics*, we consider those elements to form a valid structure. We are only interested in `img`, `a` and textNodes. Furthermore, we are only interested in visible textNodes.
 
 
-## Clustering
+## Recognizing Text Nodes that belong togheter
+
+Often we have 
 
 https://github.com/harthur/clustering
 
