@@ -41,7 +41,7 @@ function struktur(config = {}) {
             if (this.config.highlightStruktur) {
                 for (let structure of structures) {
                     structure.forEach((node) => {
-                       node.style.border = "5px solid rgb(0, 119, 188)";
+                       node.style.border = "3px solid rgb(0, 0, 0)";
                     });
                 }
             }
@@ -241,7 +241,7 @@ function struktur(config = {}) {
                         'node': currentNode,
                         'type': 'img',
                         'src': src,
-                        'imgAlt': currentNode.getAttribute('alt').trim(),
+                        'alt': currentNode.getAttribute('alt').trim(),
                     }
                 } else {
                     obj = {
@@ -253,14 +253,17 @@ function struktur(config = {}) {
                 if (this.config.addClass) {
                     obj.class = currentNode.classList.toString();
                 }
-                this.parsed.push(obj);
+
+                if (obj.alt || obj.src) {
+                    this.parsed.push(obj);
+                }
             }
 
             if (currentNode.nodeType === 3 && !this.usedTextNodes.includes(currentNode)) {
                 let parent = currentNode.parentElement;
                 if (this.isVisible(parent)) {
                     let text = currentNode.data.trim();
-                    if (text.length >= 1) {
+                    if (text.length > 0) {
                         obj = {
                             'node': currentNode,
                             'text': currentNode.data.trim()

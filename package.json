@@ -1,7 +1,7 @@
 {
   "name": "struktur",
   "version": "1.0.0",
-  "description": "Algorithm that extracts structured information from a rendered html site",
+  "description": "Module that extracts structured information from a rendered html site and outputs JSON. HTML to JSON.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
