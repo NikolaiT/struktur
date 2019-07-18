@@ -6,11 +6,11 @@ A javascript module that recognizes a recurring structure in rendered HTML pages
 
 ### Examples
 
-1. [See image of Structures in Google SERP as PNG](https://github.com/NikolaiT/struktur/examples/google.png). Extracted [data as JSON](https://github.com/NikolaiT/struktur/examples/google.json).
-2. [Highlighted Structures in Bing SERP as PNG](https://github.com/NikolaiT/struktur/examples/bing.png) and the [Data as JSON file](https://github.com/NikolaiT/struktur/examples/bing.json).
-3. [Product Structures of Amazon as PNG](https://github.com/NikolaiT/struktur/examples/amazon.png) and the [JSON file](https://github.com/NikolaiT/struktur/examples/amazon.json).
-4. [Ebay Product Structures as PNG](https://github.com/NikolaiT/struktur/examples/ebay.png) and the the [JSON file](https://github.com/NikolaiT/struktur/examples/ebay.json).
-5. [Google News Structures as PNG](https://github.com/NikolaiT/struktur/examples/google_news.png) and the the [JSON file](https://github.com/NikolaiT/struktur/examples/google_news.json).
+1. [See image of Structures in Google SERP as PNG](https://github.com/NikolaiT/struktur/blob/master/examples/google.png). Extracted [data as JSON](https://github.com/NikolaiT/struktur/blob/master/examples/google.json).
+2. [Highlighted Structures in Bing SERP as PNG](https://github.com/NikolaiT/struktur/blob/master/examples/bing.png) and the [Data as JSON file](https://github.com/NikolaiT/struktur/blob/master/examples/bing.json).
+3. [Product Structures of Amazon as PNG](https://github.com/NikolaiT/struktur/blob/master/examples/amazon.png) and the [JSON file](https://github.com/NikolaiT/struktur/blob/master/examples/amazon.json).
+4. [Ebay Product Structures as PNG](https://github.com/NikolaiT/struktur/blob/master/examples/ebay.png) and the the [JSON file](https://github.com/NikolaiT/struktur/blob/master/examples/ebay.json).
+5. [Google News Structures as PNG](https://github.com/NikolaiT/struktur/blob/master/examples/google_news.png) and the the [JSON file](https://github.com/NikolaiT/struktur/blob/master/examples/google_news.json).
 
 ### Terminology
 

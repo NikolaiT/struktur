@@ -1,6 +1,6 @@
 {
   "name": "struktur",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Module that extracts structured information from a rendered html site and outputs JSON. HTML to JSON.",
   "main": "index.js",
   "scripts": {
