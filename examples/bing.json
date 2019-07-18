@@ -2,439 +2,813 @@
   "structure_0": [
     [
       {
+        "type": "linkWithText",
         "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
         "linkText": "News about Usa"
       },
       {
-        "text": "bing.com/news"
+        "type": "img",
+        "src": "",
+        "alt": "Wahlkampf in den USA Trump hetzt ohne Hemmungen"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.stuttgarter-zeitung.de/inhalt.wahlkampf-in-den-usa-trump-hetzt-ohne-hemmungen.c2f14479-3cd1-42c6-a75b-2cc2cc0eae50.html",
+        "linkText": "Wahlkampf in den USA Trump hetzt ohne Hemmungen\n\nFür US-Präsident Donald Trump hat der Wahlkampf 2020 längst begonnen. Er führt ihn voller Polemik und rassistischer ...\n\nStuttgarter Zeitung · 8m"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.t-online.de/nachrichten/ausland/usa/id_86115018/usa-donald-trump-attackiert-demokratin-meute-ruft-schickt-sie-zurueck-.html",
+        "linkText": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"\nT-Online · 1h"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "BVB in den USA: Verkauf von Pulisic hat keinen \"negativen Effekt\" - Spiel gegen Jürgen Klopp wird \"besonders\""
+        "alt": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\""
       },
       {
-        "href": "https://www.sport.de/news/ne3710211/bvb-in-den-usa-verkauf-von-pulisic-hat-keinen-negativen-effekt---spiel-gegen-juergen-klopp-wird-besonders/",
-        "linkText": "BVB in den USA: Verkauf von Pulisic hat keinen \"negativen Effekt\" - Spiel gegen Jürgen Klopp wird \"besonders\"\n\nBorussia Dortmund steigt am Montag ins Flugzeug, um zum dritten Mal in die USA zu reisen. Dort trifft der …\n\nsport.de · 11m"
-      },
-      {
-        "href": "https://www.spiegel.de/politik/ausland/usa-brandanschlag-auf-us-migrantenlager-polizei-erschiesst-attentaeter-a-1277244.html",
-        "linkText": "USA Versuchter Anschlag auf Migrantenlager - Polizei erschießt Attentäter\nSPIEGEL · 3h"
+        "type": "linkWithText",
+        "href": "https://www.hurriyet.de/news_usa-lassen-f-35-deal-mit-der-tand-252-rkei-platzen-54805_143520971.html",
+        "linkText": "USA lassen F-35-Deal mit der Türkei platzen\nHürriyet Avrupa · 51m"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "USA Versuchter Anschlag auf Migrantenlager - Polizei erschießt Attentäter"
+        "alt": "USA lassen F-35-Deal mit der Türkei platzen"
       },
       {
-        "href": "https://www.t-online.de/finanzen/boerse/id_51922248/isin_48682366/altmaier-schlaegt-fachkraefte-allianz-mit-den-usa-vor.html",
-        "linkText": "Altmaier schlägt Fachkräfte-Allianz mit den USA vor\nT Online · 1h"
-      },
-      {
-        "type": "img",
-        "src": "",
-        "alt": "Altmaier schlägt Fachkräfte-Allianz mit den USA vor"
-      },
-      {
-        "href": "https://www.tvspielfilm.de/tv-programm/sendung/crazy-food-usa-wir-frittieren-fast-alles,5cf8dea381896518174847b3.html",
-        "linkText": "Crazy Food USA – Wir frittieren (fast) alles!\nTV SPIELFILM · 30m"
+        "type": "linkWithText",
+        "href": "https://www.op-marburg.de/Mehr/Welt/Politik/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …\nOberhessische Presse · 2h"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "Crazy Food USA – Wir frittieren (fast) alles!"
+        "alt": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
       },
       {
-        "href": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/konjunktur-altmaier-schlaegt-fachkraefte-allianz-mit-den-usa-vor_id_10925063.html",
-        "linkText": "Konjunktur: Altmaier schlägt Fachkräfte-Allianz mit den USA vor\nFOCUS Online · 1h"
+        "type": "linkWithText",
+        "href": "https://www.haz.de/Nachrichten/Politik/Deutschland-Welt/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf\nhaz.de · 2h"
+      },
+      {
+        "type": "img",
+        "src": "/th?id=ON.78E263EBF7FB3926829C5B94990D7AEF&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf_id_10938626.html",
+        "linkText": "USA werben bei Nato-Partnern für mehr Militär im Golf\nFOCUS · 2h"
       },
       {
         "type": "img",
         "src": "/th?id=ON.913C7EBF42B678ACDAD98F6F68CFECCC&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "Konjunktur: Altmaier schlägt Fachkräfte-Allianz mit den USA vor"
+        "alt": "USA werben bei Nato-Partnern für mehr Militär im Golf"
       },
       {
-        "href": "https://www.zvw.de/inhalt.usa-eu-warnt-vor-wettruesten-nach-ende-des-inf-vertrags.7e2bfdbf-9b05-423f-8dad-a7e1d6b972bc.html",
-        "linkText": "USA EU warnt vor Wettrüsten nach Ende des INF-Vertrags\nNachrichten · 2h"
-      },
-      {
-        "type": "img",
-        "src": "/th?id=ON.53DE828C49B1BE2013D7EC74F244015A&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "USA EU warnt vor Wettrüsten nach Ende des INF-Vertrags"
-      },
-      {
-        "href": "https://www.focus.de/finanzen/boerse/welthandel-handelskrieg-mit-usa-laesst-chinas-aussenhandel-einbrechen_id_10921221.html",
-        "linkText": "Handelskrieg mit USA zeigt Wirkung: Chinas Außenhandel bricht brutal ein\nFOCUS Online · 2h"
+        "type": "linkWithText",
+        "href": "https://www.shz.de/deutschland-welt/politik/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf-id24752792.html",
+        "linkText": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf\nshz.de · 4h"
       },
       {
         "type": "img",
-        "src": "/th?id=ON.B835D575304BD25E30C8E99D8AB89BC9&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "Handelskrieg mit USA zeigt Wirkung: Chinas Außenhandel bricht brutal ein"
+        "src": "/th?id=ON.39952486D473A6D5D222DE6A252CFE94&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf"
       },
       {
+        "type": "linkWithText",
         "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
         "linkText": "See all"
       },
       {
         "type": "img",
-        "src": "/rs/5m/Qs/ic/fea28513/8ad63be1.png"
+        "src": "/rs/5m/PS/ic/fea28513/8ad63be1.png"
       },
       {
+        "type": "linkWithText",
         "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
         "linkText": "See more news about usa"
+      },
+      {
+        "fulltext": "News about Usa bing.com/newsWahlkampf in den USA Trump hetzt ohne HemmungenFür US-Präsident Donald Trump hat der Wahlkampf 2020 längst begonnen. Er führt ihn voller Polemik und rassistischer ...Stuttgarter Zeitung · 8mUSA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"T-Online · 1hUSA lassen F-35-Deal mit der Türkei platzenHürriyet Avrupa · 51mKonflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …Oberhessische Presse · 2hUSA wollen Unterstützung von NATO-Partnern für mehr Militär im Golfhaz.de · 2hUSA werben bei Nato-Partnern für mehr Militär im GolfFOCUS · 2hIran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golfshz.de · 4hSee allSee more news about usa"
       }
     ],
     [
       {
+        "type": "linkWithText",
         "href": "https://www.t-online.de/nachrichten/ausland/usa/",
         "linkText": "USA News: Aktuelle Nachrichten aus den USA - t …"
       },
       {
+        "type": "linkWithText",
         "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fwww.t-online.de%2fnachrichten%2fausland%2fusa%2f",
         "linkText": "Translate this page"
       },
       {
-        "text": "https://www.t-online.de/nachrichten/ausland/"
-      },
-      {
-        "text": "usa"
-      },
-      {
-        "text": "News"
-      },
-      {
-        "text": "aus den"
-      },
-      {
-        "text": "USA"
-      },
-      {
-        "text": ". Die aktuellen Nachrichten aus"
-      },
-      {
-        "text": "USA"
-      },
-      {
-        "text": ", Politik, NSA und vieles mehr."
+        "fulltext": "USA News: Aktuelle Nachrichten aus den USA - t …Translate this pagehttps://www.t-online.de/nachrichten/ausland/usaNews aus den USA. Die aktuellen Nachrichten aus USA, Politik, NSA und vieles mehr."
       }
     ],
     [
       {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/",
         "linkText": "CNN - Breaking News, Latest News and Videos"
       },
       {
-        "text": "https://www."
-      },
-      {
-        "text": "cnn"
-      },
-      {
-        "text": ".com"
-      },
-      {
-        "text": "View the latest"
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": "and breaking"
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": "today for U.S., world, weather, entertainment, politics and health at CNN.com."
-      },
-      {
+        "type": "linkWithText",
         "href": "https://edition.cnn.com/",
         "linkText": "CNN International"
       },
       {
-        "text": "·"
-      },
-      {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/us",
         "linkText": "U.S"
       },
       {
-        "text": "·"
-      },
-      {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/politics",
         "linkText": "Politics"
       },
       {
-        "text": "·"
-      },
-      {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/europe",
         "linkText": "Europe"
       },
       {
-        "text": "·"
-      },
-      {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/world",
         "linkText": "World"
       },
       {
-        "text": "·"
-      },
-      {
+        "type": "linkWithText",
         "href": "https://www.cnn.com/BUSINESS",
         "linkText": "Money"
+      },
+      {
+        "fulltext": "CNN - Breaking News, Latest News and Videoshttps://www.cnn.comView the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.CNN International · U.S · Politics · Europe · World · Money"
       }
     ],
     [
       {
+        "type": "linkWithText",
         "href": "https://www.zeit.de/thema/usa",
         "linkText": "USA - News und Infos | ZEIT ONLINE"
       },
       {
+        "type": "linkWithText",
         "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fwww.zeit.de%2fthema%2fusa",
         "linkText": "Translate this page"
       },
       {
-        "text": "https://www.zeit.de/thema/"
-      },
-      {
-        "text": "usa"
-      },
-      {
-        "text": "Hier finden Sie alle"
-      },
-      {
-        "text": "News"
-      },
-      {
-        "text": "und Hintergrund-Informationen von ZEIT ONLINE zu"
-      },
-      {
-        "text": "USA"
-      },
-      {
-        "text": "."
+        "fulltext": "USA - News und Infos | ZEIT ONLINETranslate this pagehttps://www.zeit.de/thema/usaHier finden Sie alle News und Hintergrund-Informationen von ZEIT ONLINE zu USA."
       }
     ],
     [
       {
-        "href": "https://www.spiegel.de/thema/usa/",
-        "linkText": "USA - SPIEGEL ONLINE"
-      },
-      {
-        "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fwww.spiegel.de%2fthema%2fusa%2f",
-        "linkText": "Translate this page"
-      },
-      {
-        "text": "https://www.spiegel.de/thema/"
-      },
-      {
-        "text": "usa"
-      },
-      {
-        "text": "Fußball-Champion"
-      },
-      {
-        "text": "USA"
-      },
-      {
-        "text": ": Willensstarker Weltmeister SPIEGEL ONLINE - 08.07.2019. Sie waren das beste Team der WM, doch die Niederlande machten es ihnen lange schwer."
-      }
-    ],
-    [
-      {
+        "type": "linkWithText",
         "href": "https://www.usatoday.com/news/",
         "linkText": "The Latest US and World News - USATODAY.com"
       },
       {
-        "text": "https://www."
-      },
-      {
-        "text": "usatoday"
-      },
-      {
-        "text": ".com/"
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": "Travel"
-      },
-      {
-        "text": "News"
-      },
-      {
-        "text": "Indiana toddler dies in fall from cruise ship. Indiana toddler dies in fall from cruise ship The 1-year-old daughter of an Indiana police officer, slipped from her grandfather's arms ..."
+        "fulltext": "The Latest US and World News - USATODAY.comhttps://www.usatoday.com/newsGet the latest national, international, and political news at USATODAY.com"
       }
     ],
     [
       {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/us",
+        "linkText": "US News – Top national stories and latest headlines - CNN"
+      },
+      {
+        "fulltext": "US News – Top national stories and latest headlines - CNNhttps://www.cnn.com/usView the latest US news, top stories, photos and videos from around the nation. To get the day’s top headlines delivered to your inbox every morning, sign up for our 5 Things newsletter."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://edition.cnn.com/",
+        "linkText": "CNN International - Breaking News, US News, World News and ..."
+      },
+      {
+        "fulltext": "CNN International - Breaking News, US News, World News and ...https://edition.cnn.comFind the latest breaking news and information on the top stories, weather, business, entertainment, politics, and more. For in-depth coverage, CNN provides special reports, video, audio, photo ..."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
         "href": "https://www.nbcnews.com/us-news",
         "linkText": "U.S. News: Breaking News Photos, & Videos on the United ..."
       },
       {
-        "text": "https://www.nbc"
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": ".com/us-"
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": "Find the latest U.S."
-      },
-      {
-        "text": "news"
-      },
-      {
-        "text": "stories, photos, and videos on NBCNews.com. Read breaking headlines covering politics, economics, pop culture, and more."
+        "fulltext": "U.S. News: Breaking News Photos, & Videos on the United ...https://www.nbcnews.com/us-newsFind the latest U.S. news stories, photos, and videos on NBCNews.com. Read breaking headlines covering politics, economics, pop culture, and more."
       }
     ],
     [
       {
-        "text": "Related searches for"
+        "type": "linkWithText",
+        "href": "https://www.foxnews.com/",
+        "linkText": "Fox News - Breaking News Updates | Latest News Headlines ..."
       },
       {
-        "text": "news usa"
+        "fulltext": "Fox News - Breaking News Updates | Latest News Headlines ...https://www.foxnews.comBreaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology ..."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://news.feed-reader.net/2339-usa.html",
+        "linkText": "USA News + Nachrichten / USA aktuell"
       },
       {
+        "type": "linkWithText",
+        "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fnews.feed-reader.net%2f2339-usa.html",
+        "linkText": "Translate this page"
+      },
+      {
+        "fulltext": "USA News + Nachrichten / USA aktuellTranslate this pagehttps://news.feed-reader.net/2339-usa.htmlHaftungshinweis. Unsere Suchmaschine enthält Links auf externe Webseiten, auf deren Inhalte wir keinen Einfluss haben. News Reader kann somit auch keine Gewähr für diese externen Inhalte übernehmen – hierfür ist stets der jeweilige Anbieter verantwortlich."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.usatoday.com/",
+        "linkText": "USA TODAY: Latest World and US News - USATODAY.com"
+      },
+      {
+        "fulltext": "USA TODAY: Latest World and US News - USATODAY.comhttps://www.usatoday.comUSA TODAY delivers current local and national news, sports, entertainment, finance, technology, and more through award-winning journalism, photos, videos and VR."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
         "href": "/search?q=usa+news+heute&FORM=QSRE1",
         "linkText": "usa news heute"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=news+usa+today+online&FORM=QSRE2",
         "linkText": "news usa today online"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=cnn+breaking+news&FORM=QSRE3",
         "linkText": "cnn breaking news"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=news+amerika+aktuell&FORM=QSRE4",
         "linkText": "news amerika aktuell"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=fox+news&FORM=QSRE5",
         "linkText": "fox news"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=news+in+america+today&FORM=QSRE6",
         "linkText": "news in america today"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=aktuelle+nachrichten+aus+den+usa&FORM=QSRE7",
         "linkText": "aktuelle nachrichten aus den usa"
       },
       {
+        "type": "linkWithText",
         "href": "/search?q=news+of+the+week+usa&FORM=QSRE8",
         "linkText": "news of the week usa"
+      },
+      {
+        "fulltext": "Related searches for news usausa news heutenews usa today onlinecnn breaking newsnews amerika aktuellfox newsnews in america todayaktuelle nachrichten aus den usanews of the week usa"
       }
     ],
     [
       {
-        "text": "1"
-      },
-      {
-        "href": "/search?q=news+usa&first=7&FORM=PERE",
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=11&FORM=PERE",
         "linkText": "2"
       },
       {
-        "href": "/search?q=news+usa&first=17&FORM=PERE1",
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=21&FORM=PERE1",
         "linkText": "3"
       },
       {
-        "href": "/search?q=news+usa&first=27&FORM=PERE2",
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=31&FORM=PERE2",
         "linkText": "4"
       },
       {
-        "href": "/search?q=news+usa&first=37&FORM=PERE3",
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=41&FORM=PERE3",
         "linkText": "5"
+      },
+      {
+        "fulltext": "Pagination12345Next"
       }
     ]
   ],
   "structure_1": [
     [
       {
-        "href": "https://www.spiegel.de/politik/ausland/usa-brandanschlag-auf-us-migrantenlager-polizei-erschiesst-attentaeter-a-1277244.html",
-        "linkText": "USA Versuchter Anschlag auf Migrantenlager - Polizei erschießt Attentäter\nSPIEGEL · 3h"
+        "type": "linkWithText",
+        "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
+        "linkText": "News about Usa"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "USA Versuchter Anschlag auf Migrantenlager - Polizei erschießt Attentäter"
-      }
-    ],
-    [
+        "alt": "Wahlkampf in den USA Trump hetzt ohne Hemmungen"
+      },
       {
-        "href": "https://www.t-online.de/finanzen/boerse/id_51922248/isin_48682366/altmaier-schlaegt-fachkraefte-allianz-mit-den-usa-vor.html",
-        "linkText": "Altmaier schlägt Fachkräfte-Allianz mit den USA vor\nT Online · 1h"
+        "type": "linkWithText",
+        "href": "https://www.stuttgarter-zeitung.de/inhalt.wahlkampf-in-den-usa-trump-hetzt-ohne-hemmungen.c2f14479-3cd1-42c6-a75b-2cc2cc0eae50.html",
+        "linkText": "Wahlkampf in den USA Trump hetzt ohne Hemmungen\n\nFür US-Präsident Donald Trump hat der Wahlkampf 2020 längst begonnen. Er führt ihn voller Polemik und rassistischer ...\n\nStuttgarter Zeitung · 8m"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.t-online.de/nachrichten/ausland/usa/id_86115018/usa-donald-trump-attackiert-demokratin-meute-ruft-schickt-sie-zurueck-.html",
+        "linkText": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"\nT-Online · 1h"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "Altmaier schlägt Fachkräfte-Allianz mit den USA vor"
-      }
-    ],
-    [
+        "alt": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\""
+      },
       {
-        "href": "https://www.tvspielfilm.de/tv-programm/sendung/crazy-food-usa-wir-frittieren-fast-alles,5cf8dea381896518174847b3.html",
-        "linkText": "Crazy Food USA – Wir frittieren (fast) alles!\nTV SPIELFILM · 30m"
+        "type": "linkWithText",
+        "href": "https://www.hurriyet.de/news_usa-lassen-f-35-deal-mit-der-tand-252-rkei-platzen-54805_143520971.html",
+        "linkText": "USA lassen F-35-Deal mit der Türkei platzen\nHürriyet Avrupa · 51m"
       },
       {
         "type": "img",
         "src": "",
-        "alt": "Crazy Food USA – Wir frittieren (fast) alles!"
-      }
-    ],
-    [
+        "alt": "USA lassen F-35-Deal mit der Türkei platzen"
+      },
       {
-        "href": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/konjunktur-altmaier-schlaegt-fachkraefte-allianz-mit-den-usa-vor_id_10925063.html",
-        "linkText": "Konjunktur: Altmaier schlägt Fachkräfte-Allianz mit den USA vor\nFOCUS Online · 1h"
+        "type": "linkWithText",
+        "href": "https://www.op-marburg.de/Mehr/Welt/Politik/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …\nOberhessische Presse · 2h"
+      },
+      {
+        "type": "img",
+        "src": "",
+        "alt": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.haz.de/Nachrichten/Politik/Deutschland-Welt/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf\nhaz.de · 2h"
+      },
+      {
+        "type": "img",
+        "src": "/th?id=ON.78E263EBF7FB3926829C5B94990D7AEF&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf_id_10938626.html",
+        "linkText": "USA werben bei Nato-Partnern für mehr Militär im Golf\nFOCUS · 2h"
       },
       {
         "type": "img",
         "src": "/th?id=ON.913C7EBF42B678ACDAD98F6F68CFECCC&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "Konjunktur: Altmaier schlägt Fachkräfte-Allianz mit den USA vor"
-      }
-    ],
-    [
+        "alt": "USA werben bei Nato-Partnern für mehr Militär im Golf"
+      },
       {
-        "href": "https://www.zvw.de/inhalt.usa-eu-warnt-vor-wettruesten-nach-ende-des-inf-vertrags.7e2bfdbf-9b05-423f-8dad-a7e1d6b972bc.html",
-        "linkText": "USA EU warnt vor Wettrüsten nach Ende des INF-Vertrags\nNachrichten · 2h"
+        "type": "linkWithText",
+        "href": "https://www.shz.de/deutschland-welt/politik/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf-id24752792.html",
+        "linkText": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf\nshz.de · 4h"
       },
       {
         "type": "img",
-        "src": "/th?id=ON.53DE828C49B1BE2013D7EC74F244015A&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "USA EU warnt vor Wettrüsten nach Ende des INF-Vertrags"
-      }
-    ],
-    [
-      {
-        "href": "https://www.focus.de/finanzen/boerse/welthandel-handelskrieg-mit-usa-laesst-chinas-aussenhandel-einbrechen_id_10921221.html",
-        "linkText": "Handelskrieg mit USA zeigt Wirkung: Chinas Außenhandel bricht brutal ein\nFOCUS Online · 2h"
+        "src": "/th?id=ON.39952486D473A6D5D222DE6A252CFE94&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf"
       },
       {
-        "type": "img",
-        "src": "/th?id=ON.B835D575304BD25E30C8E99D8AB89BC9&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
-        "alt": "Handelskrieg mit USA zeigt Wirkung: Chinas Außenhandel bricht brutal ein"
-      }
-    ],
-    [
-      {
+        "type": "linkWithText",
         "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
         "linkText": "See all"
       },
       {
         "type": "img",
-        "src": "/rs/5m/Qs/ic/fea28513/8ad63be1.png"
+        "src": "/rs/5m/PS/ic/fea28513/8ad63be1.png"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
+        "linkText": "See more news about usa"
+      },
+      {
+        "fulltext": "News about Usa bing.com/newsWahlkampf in den USA Trump hetzt ohne HemmungenFür US-Präsident Donald Trump hat der Wahlkampf 2020 längst begonnen. Er führt ihn voller Polemik und rassistischer ...Stuttgarter Zeitung · 8mUSA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"T-Online · 1hUSA lassen F-35-Deal mit der Türkei platzenHürriyet Avrupa · 51mKonflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …Oberhessische Presse · 2hUSA wollen Unterstützung von NATO-Partnern für mehr Militär im Golfhaz.de · 2hUSA werben bei Nato-Partnern für mehr Militär im GolfFOCUS · 2hIran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golfshz.de · 4hSee allSee more news about usa"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.t-online.de/nachrichten/ausland/usa/",
+        "linkText": "USA News: Aktuelle Nachrichten aus den USA - t …"
+      },
+      {
+        "type": "linkWithText",
+        "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fwww.t-online.de%2fnachrichten%2fausland%2fusa%2f",
+        "linkText": "Translate this page"
+      },
+      {
+        "fulltext": "USA News: Aktuelle Nachrichten aus den USA - t …Translate this pagehttps://www.t-online.de/nachrichten/ausland/usaNews aus den USA. Die aktuellen Nachrichten aus USA, Politik, NSA und vieles mehr."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/",
+        "linkText": "CNN - Breaking News, Latest News and Videos"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://edition.cnn.com/",
+        "linkText": "CNN International"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/us",
+        "linkText": "U.S"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/politics",
+        "linkText": "Politics"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/europe",
+        "linkText": "Europe"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/world",
+        "linkText": "World"
+      },
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/BUSINESS",
+        "linkText": "Money"
+      },
+      {
+        "fulltext": "CNN - Breaking News, Latest News and Videoshttps://www.cnn.comView the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.CNN International · U.S · Politics · Europe · World · Money"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.zeit.de/thema/usa",
+        "linkText": "USA - News und Infos | ZEIT ONLINE"
+      },
+      {
+        "type": "linkWithText",
+        "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fwww.zeit.de%2fthema%2fusa",
+        "linkText": "Translate this page"
+      },
+      {
+        "fulltext": "USA - News und Infos | ZEIT ONLINETranslate this pagehttps://www.zeit.de/thema/usaHier finden Sie alle News und Hintergrund-Informationen von ZEIT ONLINE zu USA."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.usatoday.com/news/",
+        "linkText": "The Latest US and World News - USATODAY.com"
+      },
+      {
+        "fulltext": "The Latest US and World News - USATODAY.comhttps://www.usatoday.com/newsGet the latest national, international, and political news at USATODAY.com"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.cnn.com/us",
+        "linkText": "US News – Top national stories and latest headlines - CNN"
+      },
+      {
+        "fulltext": "US News – Top national stories and latest headlines - CNNhttps://www.cnn.com/usView the latest US news, top stories, photos and videos from around the nation. To get the day’s top headlines delivered to your inbox every morning, sign up for our 5 Things newsletter."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://edition.cnn.com/",
+        "linkText": "CNN International - Breaking News, US News, World News and ..."
+      },
+      {
+        "fulltext": "CNN International - Breaking News, US News, World News and ...https://edition.cnn.comFind the latest breaking news and information on the top stories, weather, business, entertainment, politics, and more. For in-depth coverage, CNN provides special reports, video, audio, photo ..."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.nbcnews.com/us-news",
+        "linkText": "U.S. News: Breaking News Photos, & Videos on the United ..."
+      },
+      {
+        "fulltext": "U.S. News: Breaking News Photos, & Videos on the United ...https://www.nbcnews.com/us-newsFind the latest U.S. news stories, photos, and videos on NBCNews.com. Read breaking headlines covering politics, economics, pop culture, and more."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.foxnews.com/",
+        "linkText": "Fox News - Breaking News Updates | Latest News Headlines ..."
+      },
+      {
+        "fulltext": "Fox News - Breaking News Updates | Latest News Headlines ...https://www.foxnews.comBreaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology ..."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://news.feed-reader.net/2339-usa.html",
+        "linkText": "USA News + Nachrichten / USA aktuell"
+      },
+      {
+        "type": "linkWithText",
+        "href": "http://www.microsofttranslator.com/bv.aspx?ref=SERP&br=ro&mkt=de-DE&dl=en&lp=DE_EN&a=https%3a%2f%2fnews.feed-reader.net%2f2339-usa.html",
+        "linkText": "Translate this page"
+      },
+      {
+        "fulltext": "USA News + Nachrichten / USA aktuellTranslate this pagehttps://news.feed-reader.net/2339-usa.htmlHaftungshinweis. Unsere Suchmaschine enthält Links auf externe Webseiten, auf deren Inhalte wir keinen Einfluss haben. News Reader kann somit auch keine Gewähr für diese externen Inhalte übernehmen – hierfür ist stets der jeweilige Anbieter verantwortlich."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.usatoday.com/",
+        "linkText": "USA TODAY: Latest World and US News - USATODAY.com"
+      },
+      {
+        "fulltext": "USA TODAY: Latest World and US News - USATODAY.comhttps://www.usatoday.comUSA TODAY delivers current local and national news, sports, entertainment, finance, technology, and more through award-winning journalism, photos, videos and VR."
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=usa+news+heute&FORM=QSRE1",
+        "linkText": "usa news heute"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa+today+online&FORM=QSRE2",
+        "linkText": "news usa today online"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=cnn+breaking+news&FORM=QSRE3",
+        "linkText": "cnn breaking news"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+amerika+aktuell&FORM=QSRE4",
+        "linkText": "news amerika aktuell"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=fox+news&FORM=QSRE5",
+        "linkText": "fox news"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+in+america+today&FORM=QSRE6",
+        "linkText": "news in america today"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=aktuelle+nachrichten+aus+den+usa&FORM=QSRE7",
+        "linkText": "aktuelle nachrichten aus den usa"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+of+the+week+usa&FORM=QSRE8",
+        "linkText": "news of the week usa"
+      },
+      {
+        "fulltext": "Related searches for news usausa news heutenews usa today onlinecnn breaking newsnews amerika aktuellfox newsnews in america todayaktuelle nachrichten aus den usanews of the week usa"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=11&FORM=PERE",
+        "linkText": "2"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=21&FORM=PERE1",
+        "linkText": "3"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=31&FORM=PERE2",
+        "linkText": "4"
+      },
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa&first=41&FORM=PERE3",
+        "linkText": "5"
+      },
+      {
+        "fulltext": "Pagination12345Next"
       }
     ]
-  ]
+  ],
+  "structure_2": [
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.t-online.de/nachrichten/ausland/usa/id_86115018/usa-donald-trump-attackiert-demokratin-meute-ruft-schickt-sie-zurueck-.html",
+        "linkText": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"\nT-Online · 1h"
+      },
+      {
+        "type": "img",
+        "src": "",
+        "alt": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\""
+      },
+      {
+        "fulltext": "USA: Donald Trump attackiert Demokratin – Meute ruft \"Schickt sie zurück!\"T-Online · 1h"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.hurriyet.de/news_usa-lassen-f-35-deal-mit-der-tand-252-rkei-platzen-54805_143520971.html",
+        "linkText": "USA lassen F-35-Deal mit der Türkei platzen\nHürriyet Avrupa · 51m"
+      },
+      {
+        "type": "img",
+        "src": "",
+        "alt": "USA lassen F-35-Deal mit der Türkei platzen"
+      },
+      {
+        "fulltext": "USA lassen F-35-Deal mit der Türkei platzenHürriyet Avrupa · 51m"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.op-marburg.de/Mehr/Welt/Politik/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …\nOberhessische Presse · 2h"
+      },
+      {
+        "type": "img",
+        "src": "",
+        "alt": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
+      },
+      {
+        "fulltext": "Konflikt mit Iran - USA wollen Unterstützung von NATO-Partnern für mehr Militär …Oberhessische Presse · 2h"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.haz.de/Nachrichten/Politik/Deutschland-Welt/USA-wollen-Unterstuetzung-von-NATO-Partnern-fuer-mehr-Militaer-im-Golf",
+        "linkText": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf\nhaz.de · 2h"
+      },
+      {
+        "type": "img",
+        "src": "/th?id=ON.78E263EBF7FB3926829C5B94990D7AEF&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golf"
+      },
+      {
+        "fulltext": "USA wollen Unterstützung von NATO-Partnern für mehr Militär im Golfhaz.de · 2h"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf_id_10938626.html",
+        "linkText": "USA werben bei Nato-Partnern für mehr Militär im Golf\nFOCUS · 2h"
+      },
+      {
+        "type": "img",
+        "src": "/th?id=ON.913C7EBF42B678ACDAD98F6F68CFECCC&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "USA werben bei Nato-Partnern für mehr Militär im Golf"
+      },
+      {
+        "fulltext": "USA werben bei Nato-Partnern für mehr Militär im GolfFOCUS · 2h"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "https://www.shz.de/deutschland-welt/politik/usa-werben-bei-nato-partnern-fuer-mehr-militaer-im-golf-id24752792.html",
+        "linkText": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf\nshz.de · 4h"
+      },
+      {
+        "type": "img",
+        "src": "/th?id=ON.39952486D473A6D5D222DE6A252CFE94&pid=News&w=197&h=112&c=14&rs=2&qlt=90",
+        "alt": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golf"
+      },
+      {
+        "fulltext": "Iran stoppt Öltanker: USA werben bei Nato-Partnern für mehr Militär im Golfshz.de · 4h"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/news/search?q=usa&qpvt=news+usa&FORM=EWRE",
+        "linkText": "See all"
+      },
+      {
+        "type": "img",
+        "src": "/rs/5m/PS/ic/fea28513/8ad63be1.png"
+      },
+      {
+        "fulltext": "See all"
+      }
+    ]
+  ],
+  "structure_3": [
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=usa+news+heute&FORM=R5FD",
+        "linkText": "usa news heute"
+      },
+      {
+        "fulltext": "usa news heute"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+usa+today+online&FORM=R5FD1",
+        "linkText": "news usa today online"
+      },
+      {
+        "fulltext": "news usa today online"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=cnn+breaking+news&FORM=R5FD2",
+        "linkText": "cnn breaking news"
+      },
+      {
+        "fulltext": "cnn breaking news"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+amerika+aktuell&FORM=R5FD3",
+        "linkText": "news amerika aktuell"
+      },
+      {
+        "fulltext": "news amerika aktuell"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=fox+news&FORM=R5FD4",
+        "linkText": "fox news"
+      },
+      {
+        "fulltext": "fox news"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+in+america+today&FORM=R5FD5",
+        "linkText": "news in america today"
+      },
+      {
+        "fulltext": "news in america today"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=aktuelle+nachrichten+aus+den+usa&FORM=R5FD6",
+        "linkText": "aktuelle nachrichten aus den usa"
+      },
+      {
+        "fulltext": "aktuelle nachrichten aus den usa"
+      }
+    ],
+    [
+      {
+        "type": "linkWithText",
+        "href": "/search?q=news+of+the+week+usa&FORM=R5FD7",
+        "linkText": "news of the week usa"
+      },
+      {
+        "fulltext": "news of the week usa"
+      }
+    ]
+  ],
+  "numCandidateStructures": 4,
+  "timeElapsed": 27
 }

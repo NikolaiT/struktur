@@ -2,32 +2,28 @@
   "structure_0": [
     [
       {
-        "type": "linkWithText",
         "href": "https://www.bbc.com/news/world/europe",
         "linkText": "Europe - BBC News - BBC.com\nhttps://www.bbc.com/news/world/europe"
       },
       {
-        "fulltext": "Europe - BBC News - BBC.comhttps://www.bbc.com/news/world/europeBBC News. ... Europe fines Qualcomm €242m for 'predatory pricing'. Qualcomm. Getty Images. It is shaping up to be a busy week at the European Commission ...bbc usabbc australiabbc news todaybbc news deutschbbc world news radiocnn newsAndere suchten auch nach"
+        "fulltext": "Europe - BBC News - BBC.comhttps://www.bbc.com/news/world/europeShane Harrison. BBC NI Dublin correspondent. The European Commission proposes ending the practice of adjusting clocks by an hour twice a year. Read more.bbc usabbc australiabbc news todaybbc news deutschbbc world news radiocnn newsAndere suchten auch nach"
       }
     ],
     [
       {
-        "type": "linkWithText",
         "href": "https://de.euronews.com/nachrichten/europe",
         "linkText": "Europa | euronews - internationale Nachrichten zum Thema Europa\nhttps://de.euronews.com/nachrichten/europe"
       },
       {
-        "fulltext": "Europa | euronews - internationale Nachrichten zum Thema Europahttps://de.euronews.com/nachrichten/europeIm CacheCult 18/07/2019. 50 Jahre Mondlandung - Ausstellung in Krakau · Auch Polen feiertdie Mondlandung. Im polnischen Luftfahrtmuseum in Krakau hat die ...was passiert in europaeuropa news politikaktuelle nachrichten euwirtschaft news europader zustand europasthema europaAndere suchten auch nach"
+        "fulltext": "Europa | euronews - internationale Nachrichten zum Thema Europahttps://de.euronews.com/nachrichten/europeIm CacheDeutschland 17/07/2019. Pferdesportturnier CHIO in Aachen: Die Vorbereitungen laufen · Der CHIO in Aachen gilt als Weltfest des Pferdesports. Mehr als ...was passiert in europaeuropa news politikaktuelle nachrichten euwirtschaft news europader zustand europasthema europaAndere suchten auch nach"
       }
     ],
     [
       {
-        "type": "linkWithText",
         "href": "https://www.theguardian.com/world/europe-news",
         "linkText": "Europe | World | The Guardian\nhttps://www.theguardian.com/world/europe-news"
       },
       {
-        "type": "linkWithText",
         "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.theguardian.com/world/europe-news&prev=search",
         "linkText": "Diese Seite übersetzen"
       },
@@ -37,7 +33,6 @@
     ],
     [
       {
-        "type": "linkWithText",
         "href": "https://edition.cnn.com/europe",
         "linkText": "Europe news - breaking news, video, headlines and opinion - CNN\nhttps://edition.cnn.com/europe"
       },
@@ -47,12 +42,10 @@
     ],
     [
       {
-        "type": "linkWithText",
         "href": "https://www.france24.com/en/europe/",
         "linkText": "News from Europe - Latest world headlines and daily news - France 24\nhttps://www.france24.com/en/europe/"
       },
       {
-        "type": "linkWithText",
         "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.france24.com/en/europe/&prev=search",
         "linkText": "Diese Seite übersetzen"
       },
@@ -62,42 +55,10 @@
     ],
     [
       {
-        "type": "linkWithText",
-        "href": "https://www.independent.co.uk/news/world/europe",
-        "linkText": "Europe | News | The Independent\nhttps://www.independent.co.uk/news/world/europe"
-      },
-      {
-        "type": "linkWithText",
-        "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.independent.co.uk/news/world/europe&prev=search",
-        "linkText": "Diese Seite übersetzen"
-      },
-      {
-        "fulltext": "Europe | News | The Independenthttps://www.independent.co.uk/news/world/europeIm CacheDiese Seite übersetzenRussian nuclear power plant switches off units after malfunction. Second nuclear facility in Russia to have experienced power failures in past week. Europe."
-      }
-    ],
-    [
-      {
-        "type": "linkWithText",
-        "href": "https://www.irishtimes.com/news/world/europe",
-        "linkText": "European News | Latest News from Across Europe | The Irish Times\nhttps://www.irishtimes.com/news/world/europe"
-      },
-      {
-        "type": "linkWithText",
-        "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.irishtimes.com/news/world/europe&prev=search",
-        "linkText": "Diese Seite übersetzen"
-      },
-      {
-        "fulltext": "European News | Latest News from Across Europe | The Irish Timeshttps://www.irishtimes.com/news/world/europeIm CacheDiese Seite übersetzenRead the latest European News headlines, brought to you daily from Ireland's Definitive Brand of Quality News. Read the Irish Times Online."
-      }
-    ],
-    [
-      {
-        "type": "linkWithText",
         "href": "https://www.politico.eu/",
         "linkText": "European Politics, Policy, Government News - POLITICO\nhttps://www.politico.eu/"
       },
       {
-        "type": "linkWithText",
         "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.politico.eu/&prev=search",
         "linkText": "Diese Seite übersetzen"
       },
@@ -107,12 +68,36 @@
     ],
     [
       {
-        "type": "linkWithText",
+        "href": "https://www.independent.co.uk/news/world/europe",
+        "linkText": "Europe | News | The Independent\nhttps://www.independent.co.uk/news/world/europe"
+      },
+      {
+        "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.independent.co.uk/news/world/europe&prev=search",
+        "linkText": "Diese Seite übersetzen"
+      },
+      {
+        "fulltext": "Europe | News | The Independenthttps://www.independent.co.uk/news/world/europeIm CacheDiese Seite übersetzenSecret locations of US nuclear weapons in Europe accidentally leaked. 'These bombs are stored at six US and European bases', says Nato committee report."
+      }
+    ],
+    [
+      {
+        "href": "https://www.irishtimes.com/news/world/europe",
+        "linkText": "European News | Latest News from Across Europe | The Irish Times\nhttps://www.irishtimes.com/news/world/europe"
+      },
+      {
+        "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.irishtimes.com/news/world/europe&prev=search",
+        "linkText": "Diese Seite übersetzen"
+      },
+      {
+        "fulltext": "European News | Latest News from Across Europe | The Irish Timeshttps://www.irishtimes.com/news/world/europeIm CacheDiese Seite übersetzenRead the latest European News headlines, brought to you daily from Ireland's Definitive Brand of Quality News. Read the Irish Times Online."
+      }
+    ],
+    [
+      {
         "href": "https://www.telegraph.co.uk/europe/",
         "linkText": "Europe: Latest news, breaking stories & analysis - The Telegraph\nhttps://www.telegraph.co.uk/europe/"
       },
       {
-        "type": "linkWithText",
         "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.telegraph.co.uk/europe/&prev=search",
         "linkText": "Diese Seite übersetzen"
       },
@@ -122,12 +107,10 @@
     ],
     [
       {
-        "type": "linkWithText",
         "href": "https://www.aljazeera.com/topics/regions/europe.html",
         "linkText": "Europe News – the latest from Al Jazeera\nhttps://www.aljazeera.com/topics/regions/europe.html"
       },
       {
-        "type": "linkWithText",
         "href": "https://translate.google.de/translate?hl=de&sl=en&u=https://www.aljazeera.com/topics/regions/europe.html&prev=search",
         "linkText": "Diese Seite übersetzen"
       },
@@ -135,7 +118,5 @@
         "fulltext": "Europe News – the latest from Al Jazeerahttps://www.aljazeera.com/topics/regions/europe.htmlIm CacheDiese Seite übersetzenGet today's live news on Europe: current events, photos, infographics and Al Jazeera's exclusive stories from eyewitnesses.al jazeera asiaal jazeera news headlinesal jazeera africaal jazeera appwww aljazeera net newsnews south americaAndere suchten auch nach"
       }
     ]
-  ],
-  "numCandidateStructures": 1,
-  "timeElapsed": 24
+  ]
 }

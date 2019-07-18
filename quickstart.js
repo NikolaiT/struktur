@@ -36,13 +36,16 @@ puppeteer.launch({ headless: false, args: config.chrome_flags }).then(async brow
         return struktur({
             N: 7,
             highlightStruktur: true,
-            highlightContent: true,
+            highlightContent: false,
+            fulltext: true,
             addClass: false,
         });
     });
 
     await page.waitFor(1000);
     console.log(results);
+
+    await page.screenshot({path: `examples/quickstart.png`, fullpage: true});
 
     await browser.close();
 });

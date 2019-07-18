@@ -1,6 +1,6 @@
 {
   "name": "struktur",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Module that extracts structured information from a rendered html site and outputs JSON. HTML to JSON.",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,13 @@
   },
   "keywords": [
     "information",
-    "extraction"
+    "extraction",
+    "scraping",
+    "web scraping"
   ],
   "author": "Nikolai Tschacher",
-  "license": "UNLICENSED",
+  "website": "https://incolumitas.com/",
+  "license": "MIT",
   "dependencies": {
     "puppeteer": "^1.18.1",
     "puppeteer-extra": "^2.1.3",

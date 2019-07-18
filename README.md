@@ -6,9 +6,17 @@ A javascript module that recognizes a recurring structure in rendered HTML pages
 
 ### Examples
 
-1. [See image of Structures in Google SERP](examples/google.png). Extracted [data as JSON](examples/google.json).
-2. [Highlighted structures in Bing SERP](examples/bing.png). [Data as JSON](examples/bing.json).
-3. [Product Structures of Amazon as JSON](examples/amazon.json)
+1. [See image of Structures in Google SERP as PNG](https://github.com/NikolaiT/struktur/examples/google.png). Extracted [data as JSON](https://github.com/NikolaiT/struktur/examples/google.json).
+2. [Highlighted Structures in Bing SERP as PNG](https://github.com/NikolaiT/struktur/examples/bing.png) and the [Data as JSON file](https://github.com/NikolaiT/struktur/examples/bing.json).
+3. [Product Structures of Amazon as PNG](https://github.com/NikolaiT/struktur/examples/amazon.png) and the [JSON file](https://github.com/NikolaiT/struktur/examples/amazon.json).
+4. [Ebay Product Structures as PNG](https://github.com/NikolaiT/struktur/examples/ebay.png) and the the [JSON file](https://github.com/NikolaiT/struktur/examples/ebay.json).
+5. [Google News Structures as PNG](https://github.com/NikolaiT/struktur/examples/google_news.png) and the the [JSON file](https://github.com/NikolaiT/struktur/examples/google_news.json).
+
+### Terminology
+
+1. A **structure** is a collection/list of at least `N` **objects**.
+2. An **object** is a array of text, links with text and images elements that are visible in the DOM. An object should at least include a link with text.
+3. An **element** is the abstract name for all those links, texts, images.
 
 ### Usage
 
@@ -181,3 +189,5 @@ Struktur will most likely adopt a hybrid strategy: We will parse each text node 
 ### Remove elements that do not belong to the structure
 
 Create a filter that rejects objects in structures that do not match with the majority of other objects. This is a clustering problem and not trivial.
+
+One simple idea is to reject structures that do not have at least a link in text in their structures.

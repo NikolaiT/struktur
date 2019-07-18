@@ -2,7 +2,6 @@
 // it augments the installed puppeteer with plugin functionality
 const puppeteer = require("puppeteer-extra");
 const fs = require('fs');
- 
 // add stealth plugin and use defaults (all evasion techniques)
 const pluginStealth = require("puppeteer-extra-plugin-stealth");
 puppeteer.use(pluginStealth());
@@ -13,10 +12,9 @@ const config = {
         'google': 'https://www.google.de/search?q=europe+news',
         'bing': 'https://www.bing.com/search?q=news+usa',
         'duckduckgo': 'https://duckduckgo.com/?q=hotels+barcelona&t=h_&ia=web',
-        'huffpost': 'https://www.huffpost.com',
-        'amazon': 'https://www.amazon.com/s?k=mixer',
-        'google_news': 'https://news.google.com/?hl=de&gl=DE&ceid=DE:de',
-        'news': 'https://www.spiegel.de/',
+        // 'amazon': 'https://www.amazon.com/s?k=french+press',
+        // 'google_news': 'https://news.google.com/?hl=de&gl=DE&ceid=DE:de',
+        // 'news': 'https://www.spiegel.de/',
     },
     chrome_flags: [
         '--disable-infobars',
@@ -32,29 +30,38 @@ const config = {
 
 // puppeteer usage as normal
 puppeteer.launch({ headless: false, args: config.chrome_flags }).then(async browser => {
+    for (var provider in config.urls) {
+        let url = config.urls[provider];
+        const page = await browser.newPage();
+        await page.setBypassCSP(true);
+        await page.setViewport({width: 1920, height: 1040});
+        await page.goto(url, {waitUntil: 'networkidle0'});
+        await page.waitFor(2000);
+        await page.addScriptTag({path: 'struktur.js'});
+        var results = await page.evaluate(() => {
+            return struktur({
+                N: 6,
+                highlightStruktur: true,
+                highlightContent: false,
+                fulltext: true,
+                addClass: false,
+            });
+        });
+        await page.waitFor(2000);
+        fs.writeFileSync(`examples/${provider}.json`, results);
 
-  const page = await browser.newPage();
-  await page.setBypassCSP(true);
-  await page.setViewport({ width: 1920, height: 1040 });
-  await page.goto(config.urls.news, {waitUntil: 'networkidle0'});
+        // Get the "viewport" of the page, as reported by the page.
+        const dimensions = await page.evaluate(() => {
+            return {
+                width: document.body.scrollWidth,
+                height: document.body.scrollHeight,
+                deviceScaleFactor: window.devicePixelRatio,
+            };
+        });
 
-  await page.waitFor(2000);
-
-  await page.addScriptTag({path: 'struktur.js'});
-
-  var results = await page.evaluate(() => {
-     return struktur({
-         N: 4,
-         highlightStruktur: true,
-         highlightContent: true,
-         addClass: false,
-     });
-  });
-
-  await page.waitFor(5000);
-
-  fs.writeFileSync('struktur.json', results);
-  await page.screenshot({ path: "struktur.png", fullPage: true });
-
+        //await page.screenshot({ path: "struktur.png", clip: { x:0, y: 0, width: dimensions.width, height: dimensions.height / 3 }});
+        await page.screenshot({path: `examples/${provider}.png`});
+        await page.close()
+    }
   await browser.close();
 });

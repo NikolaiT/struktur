@@ -19,3 +19,21 @@
 2. Create a filter that rejects objects in structures that do not match with the majority of other objects. This is a clustering problem and not trivial.
 
 3. Show some examples for struktur
+
+
+### 18.7.2018
+
+1. Add a suitable license [added MIT]
+
+2. Add option to parse all text in a structure object
+
+3. clean up code [done]
+
+4. Use always textContent, except when parsing links with text, the user innerText [done]
+
+5. Remove structures without at least one linkText
+    - add type to linkText [done]
+    - implement proper filterObject and filterStructure methods [done]
+    
+    
+6. Update examples

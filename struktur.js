@@ -1,3 +1,28 @@
+/**
+ MIT License
+
+ Copyright (c) 2019 Nikolai Tschacher (incolumitas.com)
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ */
+
+
 function struktur(config = {}) {
 
     Array.prototype.extend = function (other_array) {
@@ -17,15 +42,16 @@ function struktur(config = {}) {
         constructor(config) {
             this.config = {
                 N: 6,
-                minWidth: 200,
-                minHeight: 200,
-                minWidthMin: 10,
-                minHeightMin: 10,
-                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p', 'li', 'dd'],
-                highlightStruktur: false,
-                highlightContent: false,
-                no_data_img_src: true,
-                addClass: false,
+                minWidth: 200, // the minimum width of a potential structure candidate
+                minHeight: 100, // the minimum height of a potential structure candidate
+                structureTags: ['div', 'article', 'p', 'section', 'span', 'aside', 'p', 'li', 'dd'], // allowed nodeNames for structure candidates
+                highlightStruktur: false, // add a border around structures
+                highlightContent: false, // add border around found nodes within structure objects
+                noDataImgSrc: true,
+                addClass: false, // add class to the found visible nodes within structures
+                fulltext: false, // whether to get the textContent of the full structure element instead of parsing each text node individually
+                onlyObjectsWithLinks: true, // only include objects in structures that have at least a link with text
+                errorMargin: 0.125, // the error margin in % where objects are still considered to be within a structure
             };
 
             Object.assign(this.config, config);
@@ -35,40 +61,38 @@ function struktur(config = {}) {
          * Run struktur in the current DOM.
          */
         struktur() {
+            let startTime = new Date();
             let structures = this.findCandidates();
+            console.log(structures);
             var data = {};
-
-            if (this.config.highlightStruktur) {
-                for (let structure of structures) {
-                    structure.forEach((node) => {
-                       node.style.border = "3px solid rgb(0, 0, 0)";
-                    });
-                }
-            }
-
             var structure_name;
 
-            for (let s = 0; s < structures.length; s++) {
+            // parse and filter structures
+            var s;
+            for (s = 0; s < structures.length; s++) {
                 let structure = structures[s];
                 structure_name = 'structure_' + s;
                 data[structure_name] = [];
                 for (let node of structure) {
-                    let parsed = this.parseContent(node);
+                    let object = this.parseContent(node);
 
-                    if (this.config.highlightContent) {
-                        parsed.forEach((obj) => {
-                            let node = (obj.node.nodeType === 1) ? obj.node : obj.node.parentNode;
-                            node.style.border = "1px solid rgb(255, 0, 0)";
-                        });
+                    if (object.length > 0 && this.filterObject(object)) {
+                        if (this.config.highlightStruktur) {
+                            node.style.border = "3px solid rgb(0, 0, 0)";
+                        }
+                        data[structure_name].push(object);
                     }
+                }
 
-                    // dont return the node
-                    data[structure_name].push(parsed.map((el) => {
-                        delete el.node; return el;
-                    }));
+                if (!this.filterStructure(data[structure_name])) {
+                    delete data[structure_name];
                 }
             }
 
+            let endTime = new Date();
+
+            data.numCandidateStructures = structures.length;
+            data.timeElapsed = endTime - startTime;
             return data;
         }
 
@@ -76,9 +100,59 @@ function struktur(config = {}) {
          * Remove structures from the list with objects with zero parsed
          * information elements.
          *
+         * @param structure the structure to test
+         * @returns: true if the structure passes all filters, false otherwise
+         *
          */
-        filterStructures() {
+        filterStructure(structure) {
 
+            for (let object of structure) {
+                if (object.length === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        /**
+         * filter based on elements within a structure object
+         *
+         * @param object the object to filter
+         * @returns: true if the object passes all filters, false otherwise
+         */
+        filterObject(object) {
+            var objectContainsLinkWithText = false;
+            for (let content of object) {
+                if (content.type === 'linkWithText' && content.linkText && content.linkText.length > 0) {
+                    objectContainsLinkWithText = true;
+                }
+            }
+
+            if (this.config.onlyObjectsWithLinks && !objectContainsLinkWithText) {
+                return false;
+            }
+
+            return true;
+        }
+
+        /**
+         * Check that the numbers are in a certain error margin from the average.
+         *
+         * This is not the best statistical solution, but it works for now.
+         *
+         */
+        inRange(numbers) {
+            let avg = numbers.reduce((a, b) => {return a + b}) / numbers.length;
+
+            for (let num of numbers) {
+                let delta = Math.abs(num - avg);
+                if (delta/avg >= this.errorMargin) {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         /**
@@ -106,6 +180,7 @@ function struktur(config = {}) {
             var candidates = [];
             var found = [];
 
+            // find parents with at least N children with the same tag name
             for (let element of allElems) {
                 if (element.childElementCount >= this.config.N) {
                     let child_tags = {};
@@ -117,7 +192,7 @@ function struktur(config = {}) {
                     }
 
                     for (let tag in child_tags) {
-                        if (child_tags[tag] > this.config.N) {
+                        if (child_tags[tag] >= this.config.N) {
                             candidates.push({
                                 'node': element,
                                 'tag': tag,
@@ -129,6 +204,7 @@ function struktur(config = {}) {
 
             // remove objects of candidates that do not visually align
             // horizontally or vertically
+            // allow a error of 10% or so of the average height/width
             for (let candidate of candidates) {
 
                 var children = Array.from(candidate.node.children);
@@ -141,34 +217,24 @@ function struktur(config = {}) {
 
                 for (let child of children) {
                     var rect = child.getBoundingClientRect();
-                    if (rect.width > this.config.minWidth) {
+                    if (rect.width > this.config.minWidth && rect.height > 0) {
                         widths.push(rect.width);
                     }
-                    if (rect.height > this.config.minHeight) {
+                    if (rect.height > this.config.minHeight && rect.width > 0) {
                         heights.push(rect.height);
                     }
                 }
 
-                if (heights.length >= this.config.N && heights.every(e => e === heights[0])) {
+                if (heights.length >= this.config.N && this.inRange(heights)) {
                     found.push(children);
                 }
 
-                if (widths.length > this.config.N && widths.every(e => e === widths[0])) {
+                if (widths.length > this.config.N && this.inRange(widths)) {
                     found.push(children);
                 }
             }
 
             return found;
-        }
-
-
-        walkTheDOM(node, array) {
-            array.push(node);
-            node = node.firstChild;
-            while (node) {
-                this.walkTheDOM(node, array);
-                node = node.nextSibling;
-            }
         }
 
 
@@ -210,42 +276,53 @@ function struktur(config = {}) {
             return true;
         }
 
+        /**
+         * Extracts readable content from currentNode
+         *
+         * There are essentially three objects of interest to the user:
+         *
+         * - Link with text
+         * - Images with a src
+         * - Visible text
+         *
+         * @param currentNode
+         */
         extractReadable(currentNode) {
-
             if (currentNode.tagName === 'A' && currentNode.hasAttribute('href')) {
                 let link = currentNode.getAttribute('href');
-                if (currentNode.innerText && currentNode.innerText.length > 0) {
+                let text = currentNode.innerText; // we only want visible text here!
+                if (text && text.length > 0) {
                     this.usedTextNodes.extend(this.textNodesUnder(currentNode));
                     let obj = {
-                        'node': currentNode,
+                        'type': 'linkWithText',
                         'href': link,
-                        'linkText': currentNode.innerText.trim()
+                        'linkText': text.trim()
                     };
                     if (this.config.addClass) {
                         obj.class = currentNode.classList.toString();
                     }
+                    if (this.config.highlightContent) {
+                        currentNode.style.border = "1px solid rgb(255, 0, 0)";
+                    }
                     this.parsed.push(obj);
-
                 }
             }
 
             if (currentNode.tagName === 'IMG' && currentNode.hasAttribute('src')) {
                 let src = currentNode.getAttribute('src');
                 // not interested in data img
-                if (this.config.no_data_img_src && src.startsWith('data:')) {
+                if (this.config.noDataImgSrc && src.startsWith('data:')) {
                     src = '';
                 }
                 var obj = {};
                 if (currentNode.hasAttribute('alt')) {
                     obj = {
-                        'node': currentNode,
                         'type': 'img',
                         'src': src,
                         'alt': currentNode.getAttribute('alt').trim(),
                     }
                 } else {
                     obj = {
-                        'node': currentNode,
                         'type': 'img',
                         'src': src
                     }
@@ -256,20 +333,26 @@ function struktur(config = {}) {
 
                 if (obj.alt || obj.src) {
                     this.parsed.push(obj);
+                    if (this.config.highlightContent) {
+                        currentNode.style.border = "1px solid rgb(255, 0, 0)";
+                    }
                 }
             }
 
-            if (currentNode.nodeType === 3 && !this.usedTextNodes.includes(currentNode)) {
+            if (!this.config.fulltext && currentNode.nodeType === 3 && !this.usedTextNodes.includes(currentNode)) {
                 let parent = currentNode.parentElement;
                 if (this.isVisible(parent)) {
                     let text = currentNode.data.trim();
                     if (text.length > 0) {
                         obj = {
-                            'node': currentNode,
+                            'type': 'text',
                             'text': currentNode.data.trim()
                         };
                         if (this.config.addClass) {
                             obj.class = currentNode.parentElement.classList.toString();
+                        }
+                        if (this.config.highlightContent) {
+                            currentNode.style.border = "1px solid rgb(255, 0, 0)";
                         }
                         this.parsed.push(obj);
                     }
@@ -283,9 +366,7 @@ function struktur(config = {}) {
          * What is content?
          *
          * Every semantic tag such as span, a, em, strong, time, small
-         * where o.children.length == 0 and with o.innerText
-         *
-         * Check that the style.display attribute is not set to 'none'
+         * where o.children.length == 0 and with o.textContent
          *
          */
         parseContent(container) {
@@ -307,7 +388,15 @@ function struktur(config = {}) {
                 false
             );
 
-            while(treeWalker.nextNode()) this.extractReadable(treeWalker.currentNode);
+            while(treeWalker.nextNode()) {
+                this.extractReadable(treeWalker.currentNode);
+            }
+
+            if (this.config.fulltext) {
+                this.parsed.push({
+                    fulltext: container.textContent.trim(),
+                });
+            }
 
             return this.parsed;
         }
