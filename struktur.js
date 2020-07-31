@@ -349,10 +349,10 @@ function struktur(config = {}) {
                             'text': currentNode.data.trim()
                         };
                         if (this.config.addClass) {
-                            obj.class = currentNode.parentElement.classList.toString();
+                            obj.class = parent.classList.toString();
                         }
                         if (this.config.highlightContent) {
-                            currentNode.style.border = "1px solid rgb(255, 0, 0)";
+                          parent.style.border = "1px solid rgb(255, 0, 0)";
                         }
                         this.parsed.push(obj);
                     }
